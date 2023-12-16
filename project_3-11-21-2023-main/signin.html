@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-in Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .signin-container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .signin-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db; /* Button color */
+      color: #ffffff; /* Text color */
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .signin-button:hover {
+      background-color: #2980b9; /* Button color on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signin-container">
+    <form id="signinForm">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="button" class="signin-button" onclick="signIn()">Sign In</button>
+    </form>
+  </div>
+
+  <script>
+    function signIn() {
+      // Add your sign-in logic here (e.g., validate credentials)
+      // For simplicity, just redirect to the sign-out page
+      window.location.href = 'signout.html';
+    }
+  </script>
+
+</body>
+</html>

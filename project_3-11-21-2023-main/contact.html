@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+      .contact-parent{
+        background: #fff;
+        display:flex;
+        margin:80px 0;
+    }
+
+    .contact-child{
+        display:flex;
+        flex:1;
+        box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+    }
+    .child1{
+        background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/bg_00.jpg");
+        background-size:cover;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        color:#fff;
+        padding:100px 0;
+    }
+    .child1 p{
+        padding-left:20%;
+        font-size:20px;
+        text-shadow:0px 0px 2px #000;
+    }
+     
+    .child1 p span{
+        font-size:16px;
+        color:#9df2fd;
+    }
+    .child2{
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .inside-contact{
+    width:90%;
+    margin:0 auto;
+}
+ 
+.inside-contact h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:50px;
+}
+ 
+.inside-contact h3{
+    text-align:center;
+    font-size:16px;
+    color:#0085e2;
+}
+.inside-contact input, .inside-contact textarea{
+        width:100%;
+        background-color:#eee;
+        border:1px solid rgba(0,0,0,0.48);
+        padding:5px 10px;
+        margin-bottom:20px;
+    }
+    .inside-contact input[type=submit]{
+        background-color:#000;
+        color:#fff;
+        transition:0.2s;
+        border:2px solid #000;
+        margin:30px 0;
+    }
+    .inside-contact input[type=submit]:hover{
+        background-color:#fff;
+        color:#000;
+        transition:0.2s;
+    }
+    @media screen and (max-width:991px){
+        .contact-parent{
+            display:block;
+            width:100%;
+        }
+     
+        .child1{
+            display:none;
+        }
+     
+        .child2{
+            background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+            background-size:cover;
+        }
+     
+        .inside-contact input, .inside-contact textarea{
+            background-color:#fff;
+        }
+    }
+
+
+    /* footer  */
+
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+/* 
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+} */
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #f8f5f5;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #f1e8e8;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #141212;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #f3f5f7;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  white;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+
+/*  */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+</style>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="vegitables.html">Fresh vegitables</a></li>
+            <li><a href="fruits.product.html">Fresh Fruits</a></li>
+          </ul>
+        </li> 
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="add_product.html">Add Product</a></li>
+            <li><a href="view_product.html">View Product</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders & Payment <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="view_orders.html">View Orders</a></li>
+            <li><a href="view_payment.html">View Payments</a></li>
+          </ul>
+        </li> 
+        <li><a href="view customers.html">View Customers</a></li>   
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">shop <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="product-single.html">Single Product</a></li>
+            <li><a href="shopping cart.html">shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+  
+  
+          </ul>
+          <li><a href="contact.html">Contact</a></li>   
+
+        </li>
+      </li> 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="about.html">About</a></li>   
+  
+        <li><a href=""><span class="glyphicon glyphicon-user"></span> admin@gmail.com</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- <div class="jumbotron jumbotron-fluid">
+  
+    <div class="container">
+        <h2><b>Contact Us<b></h2>
+    </div>
+</div> -->
+<header>
+  <h1>Contact</h1>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="contact-parent">
+       <div class="contact-child child1">
+          <p>
+             <i class="fas fa-map-marker-alt"></i> Address <br />
+             <span> spectrum softtech solution(p)Ltd 
+             <br />
+             mahakavi G Road kochi-682 011
+             </span>
+          </p>
+          <p>
+             <i class="fas fa-phone-alt"></i> Let's Talk <br />
+             <span> 8086930888 / 7510556508
+              </span>
+          </p>
+          <p>
+             <i class=" far fa-envelope"></i> General Support <br />
+             <span>contact@example.com</span>
+          </p>
+       </div>
+       <!-- <div class="contact-child child2">
+          <div class="inside-contact">
+             <h2>Contact Us</h2>
+             <h3>
+                <span id="confirm">
+             </h3>
+             <p>Name *</p>
+             <input id="txt_name" type="text" Required="required">
+             <p>Email *</p>
+             <input id="txt_email" type="text" Required="required">
+             <p>Phone *</p>
+             <input id="txt_phone" type="text" Required="required">
+             <p>Subject *</p>
+             <input id="txt_subject" type="text" Required="required">
+             <p>Message *</p>
+             <textarea id="txt_message" rows="4" cols="20" Required="required" ></textarea>
+             <input type="submit" id="btn_send" value="SEND">
+          </div>
+       </div> -->
+       <div class="contact-child child2">
+        <div class="inside-contact">
+            <h2>Contact Us</h2>
+            <h3><span id="confirm"></span></h3>
+    
+            <form id="contactForm" onsubmit="return validateForm()">
+                <p>Name *</p>
+                <input id="txt_name" type="text" required>
+    
+                <p>Email *</p>
+                <input id="txt_email" type="text" required>
+    
+                <p>Phone *</p>
+                <input id="txt_phone" type="text" required>
+    
+                <p>Subject *</p>
+                <input id="txt_subject" type="text" required>
+    
+                <p>Message *</p>
+                <textarea id="txt_message" rows="4" cols="20" required></textarea>
+    
+                <input type="submit" id="btn_send" value="SEND">
+            </form>
+        </div>
+    </div>
+    
+    
+    </div>
+ </div>
+ <script>
+  function validateForm() {
+      var name = document.getElementById('txt_name').value;
+      var email = document.getElementById('txt_email').value;
+      var phone = document.getElementById('txt_phone').value;
+      var subject = document.getElementById('txt_subject').value;
+      var message = document.getElementById('txt_message').value;
+
+      // Simple validation example
+      if (name === "" || email === "" || phone === "" || subject === "" || message === "") {
+          alert("Please fill in all fields.");
+          return false; // Prevent form submission
+      }
+
+      // Additional validation logic can be added as needed
+
+      // If everything is valid, you can submit the form
+      return true;
+  }
+</script>
+
+
+ <footer class="footer-distributed">
+
+  <div class="footer-left">
+
+      <h3>veg<span>fruit</span></h3>
+
+      <p class="footer-links">
+          <a href="index.html" class="link-1">Home</a>
+          
+          <a href="">Blog</a>
+      
+          <a href="view_product.html">product</a>
+      
+          <a href="aboutpage2.html">About</a>
+          
+          <a href="view_payment.html">payments</a>
+          
+          <a href="contact.html">Contact</a>
+      </p>
+
+      <p class="footer-company-name">spectrum @ kochi-682</p>
+  </div>
+
+  <div class="footer-center">
+
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>spectrum softtech</span>solution(p)Ltd mahakavi G Road kochi-682 011 </p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>7510556508</p><br>
+          <p>8086930888</p>
+      </div>
+
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">"https://www.spectrum.net.in/</a></p>
+      </div>
+
+  </div>
+
+  <div class="footer-right">
+
+      <p class="footer-company-about">
+          <span>About the onlineshop</span>
+          Fruits and vegetables contain important vitamins, minerals and plant chemicals. They also contain fibre. There are many varieties of fruit and vegetables available and many ways to prepare, cook and serve them
+      </p>
+
+      <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

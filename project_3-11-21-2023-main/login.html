@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+
+
+img{
+	width: 100%;
+}
+.login {
+    height: 1000px;
+    width: 100%;
+    background: linear-gradient(212.38deg, rgba(39, 34, 36, 0.7) 0%, rgba(48, 36, 49, 0.71) 100%),url(images/bg_15.jpg);
+    position: relative;
+    background-attachment: fixed;
+  background-repeat: no-repeat;
+    background-size: cover
+}
+.login_box {
+    width: 1050px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+.login_box .left{
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+  
+}
+.login_box .right{
+  width: 59%;
+  height: 100%  
+}
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.left .top_link{
+  height: 20px
+}
+.left .contact{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff)
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    background: #583672;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+
+
+
+.right {
+	background: linear-gradient(212.38deg, rgba(22, 18, 20, 0.7) 0%, rgba(15, 14, 15, 0.71) 100%),url(images/image_2.jpg);
+	color: #fff;
+	position: relative;
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+
+}
+
+.right .right-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%);
+}
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.right-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+.right-text h4{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+
+
+
+.redirect-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .redirect-button:hover {
+            background-color: #45a049;
+        }
+
+
+        /* footer */
+
+
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+/* 
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+} */
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #f8f5f5;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #f1e8e8;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #141212;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #f3f5f7;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  white;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+</style>
+
+<body>
+  
+</body>
+</html>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="vegitables.html">Fresh vegitables</a></li>
+            <li><a href="fruits.product.html">Fresh Fruits</a></li>
+          </ul>
+        </li> 
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="add_product.html">Add Product</a></li>
+            <li><a href="view_product.html">View Product</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders & Payment <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="view_orders.html">View Orders</a></li>
+            <li><a href="view_payment.html">View Payments</a></li>
+          </ul>
+        </li> 
+        <li><a href="view customers.html">View Customers</a></li>   
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">shop <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="product-single.html">Single Product</a></li>
+            <li><a href="shopping cart.html">shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+  
+  
+          </ul>
+          <li><a href="contact.html">Contact</a></li>   
+
+        </li>
+      </li> 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="about.html">About</a></li>   
+  
+        <li><a href=""><span class="glyphicon glyphicon-user"></span> admin@gmail.com</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
+      </ul>
+    </div>
+  </nav>
+  <section class="login">
+    <div class="login_box">
+      <div class="left">
+        <div class="top_link"><a href="index.html"><img src="" alt="">Return home</a></div>
+        <div class="contact">
+          <form action="">
+            <h3>LOGIN</h3>
+            <input type="text" id="username" placeholder="USERNAME">
+<input type="password" id="password" placeholder="PASSWORD">
+
+<p><a href="Forgot Password.html" onclick="forgotPassword()">Forgot Password?</a></p>
+<button type="button" class="submit" onclick="validateForm()">LET'S GO</button>
+
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-text">
+          <!-- <h2>SIGN UP</h2> -->
+          <h4 style="color: #fff;">Register</h4>
+          <h5 style="color: #fff;">don't have an account ? Register one!</h5>
+        <!-- <button type="button" class="submit">Register an Account</button> -->
+        <button type="button" class="submit" onclick="redirectToRegistration()">Register an Account</button>
+        </div>
+        <div class="right-inductor"><img src="" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <script>
+   
+    function redirectToRegistration() {
+        // Replace 'registration.html' with the actual URL you want to redirect to
+        window.location.href = 'register.html';
+    }
+
+function redirectToRegistration() {
+    window.location.href = "register.html";
+}
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Focus the username field on page load
+    document.getElementById('username').focus();
+  });
+
+  function validateForm() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    // Password criteria: at least 8 characters, including at least one uppercase letter, one lowercase letter, and one number
+    var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+    if (username.trim() === '' || password.trim() === '') {
+      alert('Please enter both username and password.');
+    } else if (!passwordRegex.test(password)) {
+      alert('Password must be at least 8 characters long');
+    } else {
+      // You can add additional validation or submit the form here
+      alert('Form submitted successfully!');
+      // document.getElementById('loginForm').submit();
+    }
+  }
+</script>
+
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <h3>veg<span>fruit</span></h3>
+
+        <p class="footer-links">
+            <a href="index.html" class="link-1">Home</a>
+            
+            <a href="">Blog</a>
+        
+            <a href="view_product.html">product</a>
+        
+            <a href="aboutpage2.html">About</a>
+            
+            <a href="view_payment.html">payments</a>
+            
+            <a href="contact.html">Contact</a>
+        </p>
+
+        <p class="footer-company-name">spectrum @ kochi-682</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>spectrum softtech</span>solution(p)Ltd mahakavi G Road kochi-682 011 </p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>7510556508</p><br>
+            <p>8086930888</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">"https://www.spectrum.net.in/</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About the onlineshop</span>
+            Fruits and vegetables contain important vitamins, minerals and plant chemicals. They also contain fibre. There are many varieties of fruit and vegetables available and many ways to prepare, cook and serve them
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+</body>
+
+</html>
