@@ -2,9 +2,9 @@ from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render
 
-def members(request):
-    return render(request,'index2.html')
-def index(request):
+# def members(request):
+#     return render(request,'index2.html')
+def home(request):
     return render(request,'index.html')
 def fruits(request):
     return render(request,'fruits.product.html')
@@ -30,5 +30,13 @@ def about(request):
     return render(request,'about.html')
 def view_order(request):
     return render(request,'view_orders.html')
+def orderpage(request):
+    return render(request,'orderpage.html')
+def add_product(request):
+    return render(request,'add_product.html')
+def logout(request):
+    return render(request,'logout.html')
+def logout_action(request):
+    return render(request,'logout-action.html')
 def orderpage(request):
     return render(request,'orderpage.html')

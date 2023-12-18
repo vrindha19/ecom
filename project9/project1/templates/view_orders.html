@@ -2,6 +2,7 @@
 {% load static %}
 {% block body %}
 {% include 'header.html' %}
+{% include 'nav.html' %}
 
     <style>
         body {
@@ -163,7 +164,7 @@
     </div>
 
     <div class="order-actions">
-      <a href="orderpage.html" class="btn-view-order" onclick="viewOrder()">View Order</a>
+      <a href="{% url 'orderpage' %}" class="btn-view-order" onclick="viewOrder()">View Order</a>
       <a href="track_order.html" class="btn-track-order" onclick="trackOrder()">Track Order</a>
     </div>
 

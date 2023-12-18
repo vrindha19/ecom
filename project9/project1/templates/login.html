@@ -1,6 +1,7 @@
 {% load static %}
 {% block body %}
 {% include 'header.html' %}
+{% include 'nav.html' %}
 
 
 <style>
@@ -168,14 +169,14 @@ img{
   <section class="login">
     <div class="login_box">
       <div class="left">
-        <div class="top_link"><a href="index.html"><img src="" alt="">Return home</a></div>
+        <div class="top_link"><a href="{% url 'home' %}"><img src="" alt="">Return home</a></div>
         <div class="contact">
           <form action="">
             <h3>LOGIN</h3>
             <input type="text" id="username" placeholder="USERNAME">
 <input type="password" id="password" placeholder="PASSWORD">
 
-<p><a href="Forgot Password.html" onclick="forgotPassword()">Forgot Password?</a></p>
+<p><a href="{% url 'forgot_password' %}" onclick="forgotPassword()">Forgot Password?</a></p>
 <button type="button" class="submit" onclick="validateForm()">LET'S GO</button>
 
           </form>
@@ -185,9 +186,9 @@ img{
         <div class="right-text">
           <!-- <h2>SIGN UP</h2> -->
           <h4 style="color: #fff;">Register</h4>
-          <h5 style="color: #fff;">don't have an account ? Register one!</h5>
-        <!-- <button type="button" class="submit">Register an Account</button> -->
-        <button type="button" class="submit" onclick="redirectToRegistration()">Register an Account</button>
+          <h5 style="color: #fff;">don't have an account ? Register one!</h5>Register an Account
+        <!-- <a href="{% url 'register' %}"><button type="button" class="submit">Register an Account</button> -->
+          <button type="button" class="submit" onclick="redirectToRegistration()">Sign Up</button>
         </div>
         <div class="right-inductor"><img src="" alt=""></div>
       </div>
@@ -195,13 +196,10 @@ img{
   </section>
   <script>
    
-    function redirectToRegistration() {
-        // Replace 'registration.html' with the actual URL you want to redirect to
-        window.location.href = 'register.html';
-    }
+
 
 function redirectToRegistration() {
-    window.location.href = "register.html";
+    window.location.href = "{% url 'register' %}";
 }
 
   document.addEventListener('DOMContentLoaded', function () {
